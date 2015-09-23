@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.zeroxlab.widget.AnimationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/animation_layout_sidebar"
+        android:layout_width="200dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/recommendationlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/sidebar_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Recommendation" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profilelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recommendationlayout"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/profilebutton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="profile" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/appsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilelayout"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/profilebutton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="App setting" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/inviteyourfreind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appsetting"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/profilebutton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invite your friend" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inviteyourfreind"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/profilebutton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="logOut" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/sidebar_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- To make LinearLayout clickable to trigger onContentTouchedWhenOpening() -->
+
+    <RelativeLayout
+        android:id="@+id/animation_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/slidbarlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/content_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickContentButton"
+                android:text="Content Button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tendethomeloginactivitybottomlayout"
+            android:layout_below="@+id/slidbarlayout"
+            android:layout_centerHorizontal="true" >
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Answer to Life, the Universe, and Everything -- is 42"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/tendethomeloginactivitybottomlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/facebookloginhbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="invite your friends" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</org.zeroxlab.widget.AnimationLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/matcheduserProfileToplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation_bar" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/viewMatchedProfiletextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/likedislikebuttonlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/likeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/heart_wit_circle_icon" />
+
+            <Button
+                android:id="@+id/dislikebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/likeButton"
+                android:background="@drawable/image_close_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_below="@+id/matcheduserProfileToplayout" -->
+    <!-- android:scrollbars="none" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/activity_main_content_Home" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/imagegalleylayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="@dimen/half_screen" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:layout_centerHorizontal="true" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/gallery_paging" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+    <com.appdupe.flamer.utility.ExtendedGallery
+        android:id="@+id/imageExtendedGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:fadingEdge="none"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/image_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <!-- </RelativeLayout> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/useragelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5" >
+
+        <TextView
+            android:id="@+id/usernametextivew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ueragetextviw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/usernametextivew"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/distancetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ueragetextviw"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/activetimetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distancetextview"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/txtst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/activetimetextview"
+            android:layout_marginLeft="10dp"
+            android:text="Status:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMatchedUserStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activetimetextview"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtst"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+    </RelativeLayout>
+
+    <!-- //// aboutUserlayout -->
+
+    <RelativeLayout
+        android:id="@+id/Aboutuseragelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5" >
+
+        <TextView
+            android:id="@+id/abouttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/abouttextviewvalues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/abouttextview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/useFriendlayout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/Aboutuseragelayout" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginTop="10dp" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/myfriendsnamelayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/usersharedfriend" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:text="Shared Friends" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/myfriendssharecont" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/usersharedfriend" -->
+    <!-- android:text="(0)" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/userFriendPhotogallery" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:layout_below="@+id/myfriendsnamelayout" -->
+    <!-- android:layout_centerHorizontal="true" > -->
+
+
+    <!-- <com.android.slidingmenu.HorizontalListView -->
+    <!-- android:id="@+id/userfriendgallery" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_centerVertical="true" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/useInterest" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/useFriendlayout" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginTop="5dp" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/userinterestedlayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/usersahredInterested" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:text="Shared Intereste" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/userInterestedcount" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/usersahredInterested" -->
+    <!-- android:text="(0)" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/userInterestedGallery" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_below="@+id/userinterestedlayout" > -->
+
+
+    <!-- <com.android.slidingmenu.HorizontalListView -->
+    <!-- android:id="@+id/userIntestedgallery" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_centerVertical="true" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- </LinearLayout> -->
+    <!-- </ScrollView> -->
+
+</LinearLayout>

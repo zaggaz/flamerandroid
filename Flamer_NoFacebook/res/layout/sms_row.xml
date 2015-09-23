@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llChatManin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/datelayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="center_horizontal" > -->
+
+
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/chateboxlayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/speech_bubble_green" > -->
+
+
+    <!--
+             <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/userImageview"
+            android:src="@drawable/ic_launcher"
+            />
+    -->
+
+    <LinearLayout
+        android:id="@+id/llChatChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/speech_bubble_green"
+        android:orientation="vertical" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/userImageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:minWidth="100dp"
+            android:shadowColor="@color/textShadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="hi there hello How R You! there!"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/chatedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_toEndOf="@+id/message_text"
+            android:text="27/11/2013"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/chatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_toEndOf="@+id/message_text"
+            android:text="10:13Pm"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

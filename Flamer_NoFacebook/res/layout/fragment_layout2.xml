@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_content_Home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.appdupe.flamer.utility.ExtendedGallery
+        android:id="@+id/imageExtendedGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:fadingEdge="none"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/image_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/useragelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/usernametextivew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Name"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/text_color_programe"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ueragetextviw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userStatuslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_status"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/text_color_programe"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userStatustextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="hello"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="@color/text_color_programe" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userAboutLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/userboutTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_programe"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aboutuserTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_programe" />
+    </LinearLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/imagegalleylayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0dp" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:gravity="center" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/gallery_paging" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_gravity="center_horizontal" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:padding="10dp" > -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/useFriendlayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="10dp" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/myfriendsnamelayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/myfriends" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_marginLeft="20dp" -->
+    <!-- android:text="MyFriendList" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/openBrecesForFriend" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/myfriends" -->
+    <!-- android:text="(" -->
+    <!-- android:textColor="@color/text_color_programe" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/friendcount" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/openBrecesForFriend" -->
+    <!-- android:text="0" -->
+    <!-- android:textColor="@color/text_color_programe" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/closebracessforFriend" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/friendcount" -->
+    <!-- android:text=")" -->
+    <!-- android:textColor="@color/text_color_programe" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/userFriendPhotogallery" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:layout_below="@+id/myfriendsnamelayout" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_marginRight="10dp" > -->
+
+
+    <!-- <com.android.slidingmenu.HorizontalListView -->
+    <!-- android:id="@+id/userfriendgallery" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/useInterest" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="5dp" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/userinterestedlayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/userInterested" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_marginLeft="20dp" -->
+    <!-- android:text="MyIntereste" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/openBreces" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/userInterested" -->
+    <!-- android:text="(" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/intrestcont" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/openBreces" -->
+    <!-- android:text="0" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/closebracess" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/intrestcont" -->
+    <!-- android:text=")" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/userInterestedGallery" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_below="@+id/userinterestedlayout" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_marginRight="10dp" > -->
+
+
+    <!-- <com.android.slidingmenu.HorizontalListView -->
+    <!-- android:id="@+id/userIntestedgallery" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </RelativeLayout> -->
+
+</LinearLayout>

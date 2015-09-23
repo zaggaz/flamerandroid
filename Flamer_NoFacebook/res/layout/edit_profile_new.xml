@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editprofilemainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/editetoplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/navigation_bar" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/editprofileTextivew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile" />
+        </RelativeLayout>
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btn_save" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:background="@android:color/transparent" -->
+        <!-- android:gravity="center" -->
+        <!-- android:padding="10dp" -->
+        <!-- android:text="@string/text_save" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:textSize="15sp" /> -->
+
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/plusbuttonlayout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginRight="20dp" > -->
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/plusbutton" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:background="@drawable/plus_btn" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/swepbutton" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:text="swap" -->
+        <!-- android:visibility="gone" /> -->
+        <!-- </RelativeLayout> -->
+
+        <LinearLayout
+            android:id="@+id/deleteandeditbuttonlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/editbuton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_btn" />
+
+            <Button
+                android:id="@+id/setProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/user_star_icon" />
+
+            <!-- <Button -->
+            <!-- android:id="@+id/exchangeprofile" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginRight="15dp" -->
+            <!-- android:background="@drawable/user_star_icon" -->
+            <!-- android:visibility="gone" /> -->
+
+            <Button
+                android:id="@+id/deletebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editetoplayout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/profie_pic_size"
+                    android:layout_height="@dimen/profie_pic_size" >
+
+                    <ProgressBar
+                        android:id="@+id/progressProfile"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/userprofilpicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/profile_image_boader"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/small_profile_pic_size"
+                        android:layout_height="@dimen/small_profile_pic_size"
+                        android:layout_marginBottom="10dp" >
+
+                        <ProgressBar
+                            android:id="@+id/progressFirst"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/firtstImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/add_image" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/small_profile_pic_size"
+                        android:layout_height="@dimen/small_profile_pic_size"
+                        android:layout_marginBottom="10dp" >
+
+                        <ProgressBar
+                            android:id="@+id/progressSecond"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/secondImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/add_image" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/small_profile_pic_size"
+                    android:layout_height="@dimen/small_profile_pic_size" >
+
+                    <ProgressBar
+                        android:id="@+id/progressThird"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/thirdimageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/add_image" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/small_profile_pic_size"
+                    android:layout_height="@dimen/small_profile_pic_size"
+                    android:layout_marginLeft="10dp" >
+
+                    <ProgressBar
+                        android:id="@+id/progressFour"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/fourtthimageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/add_image" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/small_profile_pic_size"
+                    android:layout_height="@dimen/small_profile_pic_size"
+                    android:layout_marginLeft="20dp" >
+
+                    <ProgressBar
+                        android:id="@+id/progressFive"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/fifthImageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/add_image" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/wipeviewlayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="20dp" > -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/imageviealayout" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" > -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/profileImagelayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:background="@drawable/profile_image_boader" > -->
+
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/progressprofileImage" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:background="@android:color/white" > -->
+            <!-- </ProgressBar> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/firtstImagelayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginLeft="20dp" -->
+            <!-- android:layout_toRightOf="@+id/profileImagelayout" -->
+            <!-- android:background="@drawable/add_image_boader" > -->
+
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/progressbarforfrirstImage" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:background="@android:color/white" > -->
+            <!-- </ProgressBar> -->
+
+
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/secondImagelayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/firtstImagelayout" -->
+            <!-- android:layout_marginLeft="20dp" -->
+            <!-- android:layout_marginTop="17dp" -->
+            <!-- android:layout_toRightOf="@+id/profileImagelayout" -->
+            <!-- android:background="@drawable/add_image_boader" > -->
+
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/progressbarforsecondImage" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:background="@android:color/white" > -->
+            <!-- </ProgressBar> -->
+
+
+            <!-- </RelativeLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/imageviealayoutsecond" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/imageviealayout" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_marginTop="10dp" > -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/thirdimageviewlayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:background="@drawable/add_image_boader" > -->
+
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/progressbarforthirdImage" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:background="@android:color/white" > -->
+            <!-- </ProgressBar> -->
+
+
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/fourtthimageviewlayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginLeft="20dp" -->
+            <!-- android:layout_toRightOf="@+id/thirdimageviewlayout" -->
+            <!-- android:background="@drawable/add_image_boader" > -->
+
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/progressbarforfourthImage" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:background="@android:color/white" > -->
+            <!-- </ProgressBar> -->
+
+
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/fifthimageviewlayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginLeft="20dp" -->
+            <!-- android:layout_toRightOf="@+id/fourtthimageviewlayout" -->
+            <!-- android:background="@drawable/add_image_boader" > -->
+
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/progressbarforfifthImage" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:background="@android:color/white" > -->
+            <!-- </ProgressBar> -->
+
+
+            <!-- </RelativeLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/textnumberlayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_below="@+id/imageviealayoutsecond" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textnumbertextview" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:text="500" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/editeTextlayout" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/textnumberlayout" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:background="@drawable/text_box" > -->
+
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/userbouteditext" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="90dp" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:layout_marginRight="5dp" -->
+            <!-- android:background="@android:color/transparent" /> -->
+            <!-- </RelativeLayout> -->
+            <!-- </RelativeLayout> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edtStatusS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_box"
+                    android:hint="Update your status here"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnEditProfileSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_for_contac"
+                    android:text="@string/text_update_status" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

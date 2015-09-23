@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="myprofile">My Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_string">Please Check Network Connection</string>
+    <string name="enter_message">Please enter message</string>
+    <string name="request_timeout">Request timeout</string>
+    <string name="settings">Settings</string>
+    <string name="findingpeopleneartou">Finding People Near You</string>
+    <string name="femaletextview">Female</string>
+    <string name="text_jevish">only jewish friends</string>
+    <string name="maletextview">Male</string>
+    <string name="imtextview">I Am</string>
+    <string name="showmetex">Show Me</string>
+    <string name="limittosearch">Limit to Search</string>
+    <string name="showagetextview">Show Age</string>
+    <string name="showdistancetextview">Show Distance in</string>
+    <string name="mitext">Mi.</string>
+    <string name="kimetertext">Km.</string>
+    <string name="alert">Alert</string>
+    <string name="retriedmessage">Sorry! Operation failed please try again!</string>
+    <string name="contactustext">Contact Us</string>
+    <string name="update">Update</string>
+    <string name="deleteaccount">Delete account </string>
+    <string name="logouttext">Log Out</string>
+    <string name="okbuttontext">Ok</string>
+    <string name="imagefilename">profilepic</string>
+    <string name="gridviewimage">image</string>
+    <string name="imagedire">ProfileImages</string>
+    <string name="imagedirematchuserdirectory">matchuser</string>
+    <string name="imagedirectory">ProfilePick</string>
+    <string name="alubumpic">AlubumPic</string>
+    <string name="appdirectory">Tinder</string>
+    <string name="login">Sign in with Facebook</string>
+    <string name="instructions">Login to create a link to fetch account data</string>
+    <string name="logout">Log out</string>
+    <string name="loginfaildalerttilel">Alert</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="app_name">Flamer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- original fb id -->
+    <!-- <string name="app_id">599645053447820</string> -->
+
+
+    <!-- v2 id -->
+    <!-- <string name="app_id">447440705391654</string> -->
+
+
+    <!-- new one -->
+    <!-- <string name="app_id">447454428723615</string> -->
+
+
+    <!-- fb id kishan -->
+    <!-- <string name="app_id">529053713866542</string> -->
+
+
+    <!-- fb id deep M. -->
+    <string name="app_id">1430264720576632</string>
+    <string name="pleasewaitmessage">Please wait&#8230;</string>
+    <string name="internetconnectionerrortitle">There is some problem with your internet</string>
+    <string name="internetconnectionerrormessage">Please connect to a working Internet connection.</string>
+    <string name="gpsenablemessage">GPS is disabled in your device. Would you like to enable it?</string>
+    <string name="button_ok">Yes</string>
+    <string name="button_cancel">No</string>
+    <string name="action_location_found">Location Found</string>
+
+    <string-array name="galleryimage">
+        <item>@drawable/tinderfirst</item>
+        <item>@drawable/tindersecond</item>
+        <item>@drawable/tinderthree</item>
+    </string-array>
+    <string-array name="marray">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>America</item>
+        <item>England</item>
+        <item>Russia</item>
+        <item>China</item>
+        <item>Italy</item>
+    </string-array>
+
+    <string name="menuprofile">Profile</string>
+    <string name="menuhome">Home</string>
+    <string name="menumessage">Message</string>
+    <string name="menusetting">Settings</string>
+    <string name="menuquestion">Question</string>
+    <string name="menuinvite">Invite</string>
+
+    <!-- later added -->
+    <string name="text_save">Save</string>
+    <string name="text_message_jewish">Are you JEWISH or not?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- kishan -->
+    <string name="text_questions">Questions</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_status">Status</string>
+    <string name="text_update_status">Update status</string>
+
+</resources>

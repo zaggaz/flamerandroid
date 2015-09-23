@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- for more than 600 dp -->
+    <dimen name="image_size">200dp</dimen>
+    <dimen name="half_screen">300dp</dimen>
+
+</resources>

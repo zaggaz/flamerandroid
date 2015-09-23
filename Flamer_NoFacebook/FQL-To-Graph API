@@ -1,0 +1,20 @@
+GRAPH API QUERY:-
+	me/likes?fields=link,cover,picture.type(normal)
+	this query is for list of pages that user likes	
+	
+	
+	
+	
+*******************
+LOGIN PERMISSIONS
+*******************
+user_birthday,
+email,
+user_relationships,
+user_photos,
+user_likes,
+user_relationship_details,
+read_stream,
+user_about_me,
+age_range,
+bio

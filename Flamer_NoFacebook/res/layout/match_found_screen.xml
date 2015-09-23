@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_match" >
+
+    <RelativeLayout
+        android:id="@+id/itsmatchtext_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/it_a_match_txt" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/both_user_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itsmatchtext_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/both_user_image_user_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/both_user_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/its_match_image_boader" >
+
+            <ImageView
+                android:id="@+id/user_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_image_layout"
+            android:background="@drawable/its_match_image_boader" >
+
+            <ImageView
+                android:id="@+id/friend_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_swiping_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/send_message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/tab_wit_message_icon"
+            android:text="Send a Message"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/keep_swiping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_message_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tab_wit_user_icon"
+            android:text="Keep Swiping"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
